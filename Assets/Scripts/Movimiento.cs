@@ -6,25 +6,25 @@ public class Movimiento : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
             transform.Translate(Vector3.left * velocidad * Time.deltaTime);
             Debug.Log("Izquierda");
         }
 
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {
             transform.Translate(Vector3.right * velocidad * Time.deltaTime);
             Debug.Log("Derecha");
         }
 
-        if (Input.GetKey(KeyCode.UpArrow))
+        if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
         {
             transform.Translate(Vector3.up * velocidad * Time.deltaTime);
             Debug.Log("Arriba");
         }
 
-        if (Input.GetKey(KeyCode.DownArrow) )
+        if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
         {
             transform.Translate(Vector3.down * velocidad * Time.deltaTime);
             Debug.Log("Abajo");
