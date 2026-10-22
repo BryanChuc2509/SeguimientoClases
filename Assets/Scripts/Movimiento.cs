@@ -17,6 +17,7 @@ public class Movimiento : MonoBehaviour
             transform.Translate(Vector3.left * velocidad * Time.deltaTime);
             Debug.Log("Izquierda");
             cambioColor.CambiarColor(Color.red);
+
         }
 
         if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
@@ -24,6 +25,7 @@ public class Movimiento : MonoBehaviour
             transform.Translate(Vector3.right * velocidad * Time.deltaTime);
             Debug.Log("Derecha");
             cambioColor.CambiarColor(Color.blue);
+
         }
 
         if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
@@ -31,6 +33,7 @@ public class Movimiento : MonoBehaviour
             transform.Translate(Vector3.up * velocidad * Time.deltaTime);
             Debug.Log("Arriba");
             cambioColor.CambiarColor(Color.green);
+
         }
 
         if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
@@ -38,6 +41,7 @@ public class Movimiento : MonoBehaviour
             transform.Translate(Vector3.down * velocidad * Time.deltaTime);
             Debug.Log("Abajo");
             cambioColor.CambiarColor(Color.yellow);
+            
         }
     }
 }
